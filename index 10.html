@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CloudStudio Pro — Design, Price & Present Cloud Systems</title>
+<meta name="description" content="CloudStudio Pro — a compliance-free cloud architecture studio with demos, pricing, and resale-ready licensing." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="hero card">
+      <div>
+        <div class="kicker">CloudStudio Pro™</div>
+        <h1>Design, Price & Present Cloud Infrastructure — <span style="background:linear-gradient(135deg,#10c9c4,#9c6bff);-webkit-background-clip:text;background-clip:text;color:transparent">Faster Than Any Team</span></h1>
+        <p class="sub">Blueprints, cost models, proposals, and presentations for <b>Cloud Solutions Architects</b> — built to align with <b>Microsoft Azure</b>, but vendor-neutral. Compliance-free demos only (no PHI/PII).</p>
+        <div class="hero-cta">
+          <a class="btn alt" href="code.html">View Source Code</a>
+          <a class="btn" href="#demos">Try Live Demos</a>
+          <a class="btn alt" href="#pricing">See Pricing</a>
+        </div>
+        <div class="badges">
+          <div class="badge">Azure-aligned</div>
+          <div class="badge">No Compliance Data Required</div>
+          <div class="badge">Resale & White-Label Ready</div>
+          <div class="badge">One-File Upload Friendly</div>
+        </div>
+      </div>
+      <div>
+        <img class="responsive" src="assets/img/characterA.svg" alt="Pixar-style Black CEO cloud architect with laptop">
+      </div>
+    </header>
+
+    <section class="section card">
+      <h2>Who this is for</h2>
+      <div class="grid-3">
+        <div class="feature">
+          <div class="dot"></div>
+          <div><b>Cloud Architects & Consultants:</b><br/><span class="small">Generate production-ready blueprints and proposals in minutes.</span></div>
+        </div>
+        <div class="feature">
+          <div class="dot"></div>
+          <div><b>Agencies & MSPs:</b><br/><span class="small">White-label and resell to clients with tiered pricing.</span></div>
+        </div>
+        <div class="feature">
+          <div class="dot"></div>
+          <div><b>Enterprise Teams:</b><br/><span class="small">Standardize designs across business units, present to leadership.</span></div>
+        </div>
+      </div>
+      <div class="hr"></div>
+      <div class="badges">
+        <span class="tag">Blueprint Generator</span>
+        <span class="tag">Cost Efficiency Analyzer</span>
+        <span class="tag">Migration Planner</span>
+        <span class="tag">Proposal Writer</span>
+        <span class="tag">Presentation Mode</span>
+        <span class="tag">Team Collaboration (Export)</span>
+      </div>
+    </section>
+
+    <section id="demos" class="section card">
+      <h2>Live Demos (Client‑side, compliance‑free)</h2>
+      <p class="small">These demos run entirely in your browser. No data leaves your device.</p>
+
+      <div class="demo-panel">
+        <!-- Blueprint Generator -->
+        <div class="card price-card">
+          <div class="spark"></div>
+          <h3>Blueprint Generator</h3>
+          <label>Business Type</label>
+          <input id="bp-biz" class="input" placeholder="e.g., Healthcare SaaS, Fintech, E‑commerce" />
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:8px">
+            <div>
+              <label>Users</label>
+              <input id="bp-users" class="input" type="number" value="5000"/>
+            </div>
+            <div>
+              <label>Cloud</label>
+              <select id="bp-provider" class="input">
+                <option value="azure">Azure</option>
+                <option value="aws">AWS</option>
+                <option value="gcp">GCP</option>
+              </select>
+            </div>
+            <div>
+              <label>Region</label>
+              <select id="bp-region" class="input">
+                <option>US East</option>
+                <option>US West</option>
+                <option>EU West</option>
+                <option>AP Southeast</option>
+              </select>
+            </div>
+          </div>
+          <button id="bp-run" class="button" style="margin-top:10px">Generate Blueprint</button>
+          <div id="bp-diagram" style="margin-top:10px"></div>
+          <pre id="bp-output" class="output"></pre>
+          <details class="small" style="margin-top:8px"><summary>Show HTML for this demo section</summary><pre class="output">&lt;!-- See code.html for full page source. This section is defined in index.html under &lt;h3&gt;Blueprint Generator&lt;/h3&gt; --&gt;</pre></details>
+        </div>
+
+        <!-- Cost Efficiency Analyzer -->
+        <div class="card price-card">
+          <div class="spark"></div>
+          <h3>Cost Efficiency Analyzer</h3>
+          <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:10px">
+            <div>
+              <label>Provider</label>
+              <select id="c-provider" class="input">
+                <option value="azure">Azure</option>
+                <option value="aws">AWS</option>
+                <option value="gcp">GCP</option>
+              </select>
+            </div>
+            <div>
+              <label>Workloads</label>
+              <input id="c-workloads" class="input" type="number" value="3"/>
+            </div>
+            <div>
+              <label>Storage (TB)</label>
+              <input id="c-storage" class="input" type="number" step="0.1" value="2"/>
+            </div>
+            <div>
+              <label>Traffic (TB)</label>
+              <input id="c-traffic" class="input" type="number" step="0.1" value="5"/>
+            </div>
+            <div>
+              <label>Discount %</label>
+              <input id="c-discount" class="input" type="number" value="10"/>
+            </div>
+          </div>
+          <button id="c-run" class="button" style="margin-top:10px">Estimate Costs</button>
+          <pre id="c-output" class="output"></pre>
+          <details class="small" style="margin-top:8px"><summary>Show HTML for this demo section</summary><pre class="output">&lt;!-- See code.html for full page source. This section is defined in index.html under &lt;h3&gt;Cost Efficiency Analyzer&lt;/h3&gt; --&gt;</pre></details>
+        </div>
+
+        <!-- Proposal Writer -->
+        <div class="card price-card">
+          <div class="spark"></div>
+          <h3>Proposal Writer</h3>
+          <label>Client</label>
+          <input id="p-client" class="input" placeholder="e.g., BrightWave Media"/>
+          <label style="margin-top:8px">Scenario</label>
+          <input id="p-scenario" class="input" placeholder="e.g., Migrate monolith to Azure App Service with managed SQL"/>
+          <label style="margin-top:8px">Goals</label>
+          <input id="p-goals" class="input" placeholder="e.g., Reduce infra costs by 30%, improve reliability, add observability"/>
+          <button id="p-run" class="button" style="margin-top:10px">Draft Proposal</button>
+          <pre id="p-output" class="output"></pre>
+          <details class="small" style="margin-top:8px"><summary>Show HTML for this demo section</summary><pre class="output">&lt;!-- See code.html for full page source. This section is defined in index.html under &lt;h3&gt;Proposal Writer&lt;/h3&gt; --&gt;</pre></details>
+          <p class="small">Tip: Use your browser's <b>Print</b> → <b>Save as PDF</b> to export this proposal.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section card">
+      <h2>Pricing</h2>
+      <div class="pricing">
+        <div class="card price-card">
+          <div class="spark"></div>
+          <h3>Starter</h3>
+          <div class="price">$39</div>
+          <p class="small">Blueprint + Cost Analyzer</p>
+          <a class="btn alt" href="#">Buy Starter</a>
+        </div>
+        <div class="card price-card">
+          <div class="spark"></div>
+          <h3>Professional</h3>
+          <div class="price">$199/yr</div>
+          <p class="small">+ Migration Planner + Proposal Writer</p>
+          <a class="btn alt" href="#">Buy Professional</a>
+        </div>
+        <div class="card price-card">
+          <div class="spark"></div>
+          <h3>Enterprise</h3>
+          <div class="price">$499–$2,500/yr</div>
+          <p class="small">+ Team Export + Presentation Mode + White-label</p>
+          <a class="btn alt" href="#">Contact Sales</a>
+        </div>
+        <div class="card price-card">
+          <div class="spark"></div>
+          <h3>Reseller License</h3>
+          <div class="price">$5,000–$25,000</div>
+          <p class="small">Full code rights + branding rights</p>
+          <a class="btn alt" href="#">Apply to Resell</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section card">
+      <h2>Why Enterprises Love CloudStudio Pro</h2>
+      <div class="grid-3">
+        <div class="feature">
+          <div class="dot"></div>
+          <div><b>Executive‑Ready Output</b><br/><span class="small">Architecture diagrams, ROI summaries, and proposal decks.</span></div>
+        </div>
+        <div class="feature">
+          <div class="dot"></div>
+          <div><b>Azure‑Aligned, Vendor‑Neutral</b><br/><span class="small">Switch between Azure / AWS / GCP cost models instantly.</span></div>
+        </div>
+        <div class="feature">
+          <div class="dot"></div>
+          <div><b>Compliance‑Free Demos</b><br/><span class="small">No PHI/PII. Runs locally in the browser for instant trials.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      © CloudStudio Pro — Built for architects. Sell, resell, or license to enterprises.
+    </footer>
+  </div>
+<script src="assets/js/demo.js"></script>
+</body>
+</html>

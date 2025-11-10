@@ -50,3 +50,24 @@ label{font-size:13px;color:#bcd3ff}
   .pricing{grid-template-columns:1fr}
   .grid-3{grid-template-columns:1fr}
 }
+
+/* Mixed “bold + luxury + gold” hero title */
+.title-mix{
+  font-size:clamp(48px,6vw,88px);
+  line-height:1.02;
+  font-weight:900;
+  letter-spacing:-.01em;
+  /* gold gradient fill */
+  background:linear-gradient(135deg,#d4af37 0%, #ffd976 35%, #a57c00 70%, #ffe9a8 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+  /* soft ivory glow + depth */
+  text-shadow:
+    0 0 1px rgba(255,255,255,.25),
+    0 12px 28px rgba(255,223,128,.22),
+    0 2px 0 rgba(12,18,36,.35);
+}
+@media(max-width:900px){
+  .title-mix{font-size:clamp(36px,7.5vw,56px)}
+}
